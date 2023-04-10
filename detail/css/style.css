@@ -1,0 +1,190 @@
+/* * {
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ox; */
+/* } */
+
+header,
+footer {
+    background-color: antiquewhite;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header .logo-img {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.header .logo-img img {
+    /* width: 30px; */
+    width: 30px;
+}
+
+.header .user-wrapper {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* menu */
+.menu .menu-item {
+    display: inline-block;
+    padding: 20px 50px;
+    text-align: center;
+
+}
+
+.menu .menu-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.menu .menu-item:hover {
+    background-color: palegreen;
+}
+
+/* sub-menu */
+.menu .menu-item {
+    position: relative;
+}
+
+.menu .menu-item .sub-menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 32px;
+}
+
+/* noted */
+.menu .menu-item:hover .sub-menu {
+    display: block;
+}
+
+/* style for sub-menu */
+.menu .menu-item .sub-menu {
+    background-color: burlywood;
+    width: 200px;
+    list-style-type: none;
+}
+
+.menu .menu-item .sub-menu .sub-menu-item a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu .menu-item .sub-menu .sub-menu-item:hover {
+    background-color: darkgoldenrod;
+}
+
+span {
+    text-align: right;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'sidebar main main'
+        'footer footer footer';
+    grid-template-rows: auto 1fr auto;
+}
+
+#grid-container header {
+    grid-area: header;
+}
+
+#grid-container aside {
+    grid-area: sidebar;
+    background-color: whitesmoke;
+}
+
+#grid-container section {
+    grid-area: main;
+    background-color: rgb(240, 229, 76);
+}
+
+#grid-container footer {
+    margin-top: 50px;
+    text-align: center;
+    height: 100px;
+    grid-area: footer;
+}
+
+
+@media (max-width: 900px) {
+    #grid-container {
+        grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer';
+    }
+
+    #grid-container aside {
+        display: none;
+    }
+}
+
+
+ul.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 50px;
+    font-size: 15px;
+}
+
+#grid-container aside {
+    counter-reset: step;
+}
+
+#grid-container aside ul {
+    padding: 20px;
+}
+
+#grid-container aside ul li a::before {
+    counter-increment: step;
+    content: 'Mục ' counter(step) ': ';
+}
+#grid-container aside ul li a {
+    color: purple;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+#grid-container aside ul li a:hover {
+    color: rgb(238, 88, 50);
+}
+
+#grid-container aside ul li {
+    list-style: none;
+}
+
+article > * {
+    margin-left: 30px;
+}
+article h3 {
+    color: rgb(56, 180, 218);
+    margin: 20px 10px 10px 10px;
+    font-size: 30px;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+}
+

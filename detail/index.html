@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Home</title>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/location-dot?f=classic&s=solid">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <!-- logo -->
+            <div class="logo-img">
+                <img src="./../picture/picture.png" alt="">
+            </div>
+            <!-- log in log out, username -->
+            <div class="user-wrapper">
+                <span>Lee min ho</span>
+                <a href="" id="log_out">Log out</a>
+                <a href="" id="log_in">Log in</a>
+            </div>
+        </div>
+        <nav>
+            <div>
+                <ul class="menu">
+                    <li class="menu-item"><a href="/facebook">Facebook</a></li>
+                    <li class="menu-item"><a href="/zalo">Zalo</a></li>
+                    <li class="menu-item"><a href="/gmail">Gmail</a></li>
+                    <li class="menu-item"><a href="/tiktok">Tiktok</a></li>
+                    <li class="menu-item"><a href="/phone">Phone</a></li>
+                    <li class="menu-item">
+                        <a href="/other">Other</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item"><a href="#">Intargram</a></li>
+                            <li class="sub-menu-item"><a href="#">Telegram</a></li>
+                            <li class="sub-menu-item"><a href="#">Wechat</a></li>
+                        </ul>
+                    </li>
+                    <span>
+                        <input type="text" placeholder="search">
+                        <button id="fa-button" >Tìm kiếm</button>
+                    </span>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="grid-container">
+        <aside>
+            <ul class="sticky">
+                <div>
+                    <li><a href="#information">Thông tin</a></li>
+                    <li><a href="#interest">Sở thích</a></li>
+                    <li><a href="#talent-paint">Năng khiếu</a></li>
+                    <li><a href="#etc">v.v....</a></li>
+                </div>
+            </ul>
+        </aside>
+        <section>
+            <article id="information">
+                <h3 onclick="this.innerHTML='Information'">Thông tin cá nhân</h3>
+                <div style="display: flex; column-gap: 20px;">
+                    <img src="./../picture/anh_cv.jpg" alt="" class="image" width="100px">
+                    <ul>
+                        <li>Name: Lee Min Ho</li>
+                        <li>Date: 22/6/1987 </li>
+                        <li>Job: Diễn viên</li>
+                    </ul>
+                </div>
+            </article>
+            <hr />
+            <article id="interest">
+                <h3 onclick="this.innerHTML='Interest'">Sở thích</h3>
+                <ul>
+                    <li>Thích đọc sách: Đắc nhân tâm, Nhà giả kim, Tuổi trẻ đáng giá bao giờ,v.v....</li>
+                    <li>Thích thể thao: Bơi lội, đá bóng, ...</li>
+                    <li>Thích chơi game, ca hát, xem film</li>
+                    <li>Thích nấu ăn</li>
+                    <li>Thích đi phượt</li>
+                </ul>
+            </article>
+            <hr />
+            <article id="talent-paint">
+                <h3 onclick="this.innerHTML='talent & paint'">Năng khiếu & Hội họa</h3>
+                <ul>
+                    <li>Vẽ</li>
+                    <li>Hát</li>
+                    <li>Đàn</li>
+                    <li>Nhảy</li>
+                </ul>
+            </article>
+            <hr />
+            <article id="etc">
+                <h3 onclick="this.innerHTML='ETC'">v.v....</h3>
+                <ul>
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil aut ducimus porro laborum
+                        dolorem illo magnam, ipsam praesentium quo facilis cupiditate aliquid totam dolorum cumque, fuga
+                        eaque consequatur debitis eius!</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eveniet, adipisci
+                        reiciendis suscipit nostrum porro, veniam rerum eos earum tempora iure hic a ex dignissimos
+                        facilis! Iusto accusantium doloribus dolorum.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tempore eaque, consequuntur
+                        ratione velit, officia labore provident repellat impedit doloribus laudantium. Cupiditate,
+                        minima fugiat! Excepturi enim dolor commodi sequi ad.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iure tempora accusamus
+                        quisquam voluptatem minima nemo ratione expedita placeat similique, eos omnis vel. Iure
+                        veritatis aut debitis. Consequatur, illo similique.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum natus ipsam corrupti neque vel,
+                        quisquam perspiciatis explicabo nisi labore impedit et ad nobis molestiae, aperiam iusto nostrum
+                        sapiente quia beatae.</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+    <br>
+    <footer>
+        <div><img src="./../picture/ha_noi.jpg" alt="" width="200px" height="200px"></div>
+        <div style="text-align: left;">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Phone: 0123456789</p>
+            <i class=""></i>
+            <p>Địa chỉ: Hai bà trưng- Hà Nội</p>
+        </div>
+        <p style="text-align: center;">&copy; 2023 E-commerce. All rights reservered</p>
+    </footer>
+    <script>
+        document.getElementById("log_out").style.color = "blue";
+        document.getElementById("in").style.color = "green";
+        document.getElementById("fa-button").innerHTML = "search"
+        
+    </script>
+</body>
+
+</html>
